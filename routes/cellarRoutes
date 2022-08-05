@@ -1,0 +1,15 @@
+const router = require('express').Router();
+
+const {
+
+    getCellar,
+    createCellar
+
+} = require('../controllers/cellarController')
+
+
+router.route('/').get(getCellar)
+router.route('createCellar').post(createCellar)
+
+
+module.exports = router;
