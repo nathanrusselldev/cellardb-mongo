@@ -1,13 +1,9 @@
 const { Schema, model } = require('mongoose')
+const Position = require('./Position')
 
 const cellarSchema = new Schema(
     {
-        positions: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: 'position'
-            }
-        ]
+        positions: [Position.schema]
     },
     {
         toJSON: {
