@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose')
+const cellar = require('./Cellar')
 
 const bottleSchema = new Schema(
     {
